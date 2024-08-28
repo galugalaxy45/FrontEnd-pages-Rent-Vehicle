@@ -1,0 +1,80 @@
+/* general */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+/* navbar */
+.bg-white {
+    box-shadow: rgb(38, 57, 77) 0px 0px 20px 0px;
+}
+.navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+}
+.start {
+    background-color: white;
+    color: gray;
+    border-color: gray;
+}
+.start:hover {
+    background-color: #4c88fc;
+    color: white;
+    border-color: #4c88fc;
+}
+.navbar-brand {
+    color: darkgray!important;
+}
+/* navbar end */
+/* sign up */
+.formtop {
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+.signup:hover {
+    background-color: #077d07e2;
+}
+.moreinfo {
+    background-color: rgba(239, 239, 93, 0.598);
+    border: 1px solid black;
+    width: 200px;
+    padding-left: 10px;
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+}
+span:hover .moreinfo {
+    visibility: visible;
+    transition-delay: 0.75s;
+}
+.sig small {
+    padding-bottom: 10px;
+}
+.input-group-text{
+    width: 40px;
+    height: 40px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: orange;
+}
+
+/* sign up end */
+
+/* footer */
+.footer{
+    background-color: #f9f9fa;
+
+}
+.green1{
+    color: #16df7e;
+}
+
+/* footer end */

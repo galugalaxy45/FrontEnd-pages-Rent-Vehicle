@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car booking form</title>
+    <link rel="icon" href="eNno/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- live cdn link for owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="car-form.css">
+
+</head>
+<body>
+
+<!-- navbar -->
+<section>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light bg-white fixed-top">
+      <div class="container">
+      
+        <a class="navbar-brand" href="#">RuV -rent your vehicle</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="signinpage.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signinpage.html#about">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Vehicle
+                <i class="fa-solid fa-angle-down"></i>
+                </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="bike.html">Motor Bike</a></li>
+                <li><a class="dropdown-item" href="bicycle.html">Bicycle</a></li>
+                <li><a class="dropdown-item" href="car.html">4-Wheeler</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signinpage.html#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signinpage.html#highlights">Highlights</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signinpage.html#team">Team</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="signinpage.html#contactus">Contact us</a>
+            </li>
+            <a href="mainhome.html"><button type="button" class="btn btn-primary start">Log Out</button></a>
+          </ul>
+        </div>
+     
+  </div>
+    </nav>
+</section>
+<!-- navbar end -->
+
+    <!-- car form -->
+    <section class="body1 pt-5">
+        <form action="submit_rental_details.php" method="post">
+            <h2>Pick-Up and Drop-Off Locations</h2>
+            <label for="pickupLocation">Pick-Up Location:</label>
+            <input type="text" id="pickupLocation" name="pickupLocation">
+
+            <label for="dropoffLocation">Drop-Off Location:</label>
+            <input type="text" id="dropoffLocation" name="dropoffLocation">
+
+            <h2>Rental Dates and Times</h2>
+            <label for="pickupDate">Pick-Up Date and Time:</label>
+            <input type="datetime-local" id="pickupDate" name="pickupDate">
+
+            <label for="dropoffDate">Drop-Off Date and Time:</label>
+            <input type="datetime-local" id="dropoffDate" name="dropoffDate">
+
+            <h2>Type of Car</h2>
+            <label for="carType">Type of Car:</label>
+            <select id="carType" name="carType">
+                <option value="compact">Compact</option>
+                <option value="sedan">Sedan</option>
+                <option value="SUV">SUV</option>
+                <option value="van">Van</option>
+            </select>
+
+            <label for="carFeatures">Car Features:</label>
+            <input type="text" id="carFeatures" name="carFeatures">
+
+            <h2>Driver Information</h2>
+            <label for="driverName">Full Name:</label>
+            <input type="text" id="driverName" name="driverName">
+
+            <label for="driverAge">Age:</label>
+            <input type="number" id="driverAge" name="driverAge">
+
+            <label for="driverLicense">Driver's License Number:</label>
+            <input type="text" id="driverLicense" name="driverLicense">
+
+            <label for="driverLicenseExp">License Expiration Date:</label>
+            <input type="date" id="driverLicenseExp" name="driverLicenseExp">
+
+            <h2>Insurance Information</h2>
+            <label for="ownInsurance">Do you have your own car insurance?</label>
+            <select id="ownInsurance" name="ownInsurance">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="rentalInsurance">Interested in purchasing rental car insurance?</label>
+            <select id="rentalInsurance" name="rentalInsurance">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <h2>Payment Information</h2>
+            <label for="creditCard">Credit Card Number:</label>
+            <input type="text" id="creditCard" name="creditCard">
+
+            <label for="billingAddress">Billing Address:</label>
+            <input type="text" id="billingAddress" name="billingAddress">
+
+            <label for="discountCode">Discount Code:</label>
+            <input type="text" id="discountCode" name="discountCode">
+
+            <h2>Contact Information</h2>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email">
+
+            <h2>Special Requests or Preferences</h2>
+            <label for="specialRequests">Special Requests or Preferences:</label>
+            <textarea id="specialRequests" name="specialRequests" rows="4"></textarea>
+
+            <h2>Emergency Contact</h2>
+            <label for="emergencyContact">Emergency Contact Name:</label>
+            <input type="text" id="emergencyContact" name="emergencyContact">
+
+            <label for="emergencyPhone">Emergency Contact Phone Number:</label>
+            <input type="tel" id="emergencyPhone" name="emergencyPhone">
+
+            <center>
+              <a href="unique-id.html"><button type="submit">Submit</button></a>
+            </center>
+        </form>
+    </section>
+    <!-- car form end -->
+
+
+     <!-- footer -->
+     <footer class="footer pt-2">
+        <div class="container">
+ 
+         <hr>
+         <div class="d-flex bd-highlight pt-2">
+             <p class="p-2 flex-grow-1 bd-highlight"><i class="fa-regular fa-copyright"></i>Copyright <span class="text-bold">RuV</span>.AllRights Reserved</p>
+             <p class="p-2 bd-highlight">Designed by <span class="green1">Galaxy S</span></p>
+         </div>
+ 
+         <div class="arrow">
+             <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+         </div>
+         
+        </div>
+     </footer>
+     <!-- footer end -->
+ 
+    
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

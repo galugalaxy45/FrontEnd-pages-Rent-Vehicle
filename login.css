@@ -1,0 +1,115 @@
+/* general */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+/* general */
+/* navbar */
+.about{
+    background-color: antiquewhite;
+    display: flex;
+}
+.bg-white{
+    box-shadow: rgb(38, 57, 77) 0px 0px 20px 0px;
+}
+.navbar-brand{
+    font-size: 30px;
+    font-weight: bold;
+}
+.start{
+    background-color: white;
+    color: gray;
+    border-color: gray;
+}
+.start:hover{
+    background-color: #4c88fc;
+    color: white;
+    border-color: #4c88fc;
+}
+.navbar-brand{
+    color: darkgray!important;
+}
+
+/* navbar end */
+/* login */
+.login1{
+   
+    margin: auto;
+    width: fit-content;
+
+}
+
+.formsection{
+    background-color: wheat;
+    padding: 30px;
+    width: 390px;
+    border-radius: 5px;
+    height: 400px;
+}
+.wholeformsection{
+    width: 360px;
+    height: 400px;
+    margin-top: 15%;
+    padding-left: 4%;
+    white-space: nowrap;
+}
+.formsection input{
+    padding: 8px 5px;
+    margin-bottom: 20px;
+    width: 330px;
+    background-color: #e7f2fc;
+    border-radius: 4px;
+    border: .5px solid black;
+}
+.line{
+    background-color: rgb(165, 52, 52);
+    height: 2px;
+    width: 330px;
+}
+.tohoverlogin{
+    width: 330px;
+    padding: 12px 0;
+    color: rgb(4, 1, 1);
+    background-color: #228bc8;
+    border: none;
+    border-radius: 5px;
+}
+.tohoverlogin:hover{
+    background-color: #99b4d0;
+}
+.hoverbutton{
+    width: 250px;
+    margin-top: 20px;
+    padding: 16px 0;
+    background-color: #5ba65b;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+.hoverbutton:hover{
+    background-color: #217c21;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+/* login end */
+/* footer */
+.footer{
+    background-color: #f9f9fa;
+
+}
+.green1{
+    color: #16df7e;
+}
+/* footer end */

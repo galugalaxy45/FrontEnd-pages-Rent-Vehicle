@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign in page inside</title>
+    <link rel="icon" href="eNno/favicon.png">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- live cdn link for owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="signinpage.css">
+
+</head>
+<body>
+
+      <!-- navbar -->
+      <section>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light bg-white fixed-top">
+            <div class="container">
+            
+              <a class="navbar-brand" href="#">RuV -rent your vehicle</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+
+                
+                  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Vehicle
+                      <i class="fa-solid fa-angle-down"></i>
+                      </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="bike.html">Motor Bike</a></li>
+                      <li><a class="dropdown-item" href="bicycle.html">Bicycle</a></li>
+                      <li><a class="dropdown-item" href="car.html">4-Wheeler</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#highlights">Highlights</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#team">Team</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contactus">Contact us</a>
+                  </li>
+                  <a href="mainhome.html"><button type="button" class="btn btn-primary start">Log Out</button></a>
+                </ul>
+              </div>
+           
+        </div>
+          </nav>
+    </section>
+    <!-- navbar end -->
+
+    
+
+    <!-- about -->
+    <section >
+        <div class="container about pb-3">
+            <div class="row">
+            <div class="col-md-6 ">
+                <h1 class="mt-5 pt-5 pb-2 px-3">Rent Your Dream Vehicle</h1>
+                <h3 class="py-4 px-3">Experience luxury, performance, and style with our exclusive fleet. Discover the perfect vehicle to match your desires and make every journey unforgettable. Rent your dream vehicle today</h3>
+                 <div class="d-flex">
+                  <button class="btn btn-success mx-3 get-btn" type="button">Follow Traffic Rules</button>
+                   <div class="watch">
+                    <i class="fa-regular fa-circle-play">               
+                    </i>
+                    <span class="ps-3"><video controls>
+                        <source src="images/2video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video></span>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="images/1.jpg" class="motionpic" width="100%">
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- about end -->
+
+    <!-- card -->
+
+    <section class="service pb-2 pt-5" id="about">
+        <div class="container">
+            <h1 class="behind">ABOUT US</h1>
+            <h3 class="front">ABOUT US</h3>
+            <center>
+            <p class="pt-4">Our top priority is customer satisfaction, ensuring you receive the best service and the perfect vehicle for your needs every time.</p>
+        </center>
+        </div>
+    </section>
+
+ 
+
+    <section id="about">
+        <div class="container pt-2 pb-2">
+            <div class="row">
+                <div class="col-md-2 cardsize">
+                    <div class="card p-3 card2">
+                        <i class="fa-solid fa-people-group"></i>
+                     <h5 class="py-3">Who We Are</h5>
+                     <p>Founded in 2024, Ruv has quickly become a trusted name in the transportation industry. 
+                        Our team is comprised of dedicated professionals with years of experience in the field, 
+                        committed to ensuring your safety, comfort, and satisfaction.</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card p-3 card2">
+                        <i class="fa-solid fa-person-circle-exclamation"></i>
+                    <h5 class="py-3">Our Mission</h5>
+                    <p>Our mission at RuV is simple: to provide reliable, affordable, and environmentally-friendly
+                         transportation options that meet the diverse needs of our customers. We strive to exceed
+                          expectations by offering exceptional service and maintaining the highest standards of
+                           quality in everything we do.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 card2">
+                        <i class="fa-solid fa-motorcycle"></i>
+                     <h5 class="py-3">What Sets Us Apart</h5>
+                     <p><li>Quality Vehicles: We maintain a fleet of well-maintained, modern vehicles equipped with the latest technology and safety features.</li>
+                        <li>Exceptional Service: Our friendly and knowledgeable staff are here to assist you every step of the way, from booking your vehicle to answering any questions you may have.</li>
+                        <li>Convenience: With convenient booking options and flexible rental periods, we make it easy for you to get the transportation you need, when you need it.</li>
+                       <li> Environmental Responsibility: We are committed to reducing our carbon footprint by offering eco-friendly transportation options and promoting sustainable practices.</li></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 card2">
+                        <i class="fa-regular fa-face-smile"></i>
+                     <h5 class="py-3">Our Values</h5>
+                     <p><li>Customer Satisfaction: Your satisfaction is our top priority. We go above and beyond to ensure that every customer has a positive experience with us.</li>
+                        <li>Integrity: We conduct our business with honesty, transparency, and integrity, earning the trust and respect of our customers and partners.</li>
+                        <li>Innovation: We are always looking for new and innovative ways to improve our services and provide added value to our customers.</li>
+                        <li>Community Engagement: We are proud to be active members of the communities we serve, giving back through charitable donations and community initiatives.</li></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- card end -->
+
+     <!-- services -->
+     <section class="service pb-2" id="services">
+        <div class="container">
+            <h1 class="behind">SERVICES</h1>
+            <h3 class="front">SERVICES</h3>
+            <center>
+            <p class="pt-4">Our top priority is customer satisfaction, ensuring you receive the best service and the perfect vehicle for your needs every time.</p>
+        </center>
+         <div class="row py-2">
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <center>
+                    <i class="fa-solid fa-basketball my-3 box6"></i>
+                 <h5 class="py-3">Benefits</h5>
+                 <p>Enjoy affordable rates, premium vehicles, and unmatched convenience. Our extensive fleet ensures you find the perfect ride for any occasion.</p>
+                </center>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <center>
+                    <i class="fa-regular fa-note-sticky my-3"></i>
+                <h5 class="py-3">Fleet Gallery</h5>
+                <p>Explore our high-quality fleet through our image carousel. Each vehicle comes with detailed descriptions, key features, brands, and models.</p>
+            </center>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <center>
+                    <i class="fa-solid fa-gauge-simple-high my-3"></i>
+                 <h5 class="py-3">Pricing Plans</h5>
+                 <p>Discover our clear and competitive pricing for daily, weekly, and monthly rentals. Check what's included in the price and enjoy special discounts for longer rentals</p>
+                </center>
+                </div>
+            </div>
+         </div>
+         <div class="row py-1">
+            <div class="col-md-4">
+                <div class="card p-3 card3">
+                    <center>
+                        <i class="fa-solid fa-car"></i>
+                 <h5 class="py-3">Cars:</h5>
+                 <p><h6>Comfort and Luxury</h6>
+                    Details:
+                    Perfect for long-distance travel, family trips, and business journeys.<br>
+                    Wide selection of cars from economy to luxury models.<br>
+                    All cars come with comprehensive insurance and 24/7 roadside assistance.<br>
+                    Flexible rental terms with discounts for long-term rentals.<br>
+                    Example Models: Toyota Corolla, BMW 3 Series, Audi Q5.
+                    </p>
+                </center>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3 card3">
+                    <center>
+                        <i class="fa-solid fa-motorcycle"></i>
+                <h5 class="py-3">Motorbikes:</h5>
+                <p><h6>Quick and Convenient</h6>
+                Details:
+                    Ideal for quick and efficient transportation through city traffic. <br>
+                    Range of models from scooters to high-performance motorbikes. <br>
+                    Provided with helmets and optional protective gear. <br>
+                    Competitive pricing with flexible rental periods.
+                    </p>
+            </center>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3 card3">
+                    <center>
+                        <i class="fa-solid fa-bicycle"></i>
+                 <h5 class="py-3">Bicycles:</h5>
+                 <p><h6>Eco-friendly and Healthy</h6>
+                    Details:
+                    Perfect for city commuting, leisure rides, and eco-friendly travel. <br>
+                    Available in various types including mountain bikes, road bikes, and hybrid bikes.<br>
+                    Equipped with helmets and locks for your safety and convenience.<br>
+                    Affordable daily and weekly rental rates.<br>
+                    Example Models: Giant Escape 3, Trek Marlin 7, Specialized Sirrus X..</p>
+                </center>
+                </div>
+            </div>
+         </div>
+        </div>
+    </section>
+    <!-- services end -->
+       <!-- heighlights -->
+       <section id="highlights">
+        <div class="container py-5">
+            <h1 class="behind">HIGHLIGHTS</h1>
+            <h3 class="front">HIGHLIGHTS</h3>
+            <center>
+            <p class="pt-4">Browse our Fleet Gallery to view our recently taken pictures, offering you a glimpse of our latest models in their pristine condition.</p>
+        </center>  
+        </div>
+
+        <div class="row tabcontent" id="all">
+            <div class="col-lg-4">
+                <div class="row img1 py-3">
+                    <img src="images/3.jpg" width="100%">
+                    <div class="pop w-100 px-5">
+                        <div class="d-flex justify-content-between p-2">
+                            <div class="app1 d-block">
+                                <h5>Card2</h5>
+                                <p>Card</p>
+                            </div>
+                            <div class="d-flex flex-column  gap-3 align-items-centre">
+                                <i class="fa-solid fa-plus"></i>
+                                <i class="fa-solid fa-link a"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row img4 py-3">
+                    <img src="images/8.jpg" width="100%">
+                    <div class="pop w-100 px-5">
+                        <div class="d-flex justify-content-between p-2">
+                            <div class="app1 d-block">
+                                <h5>Card2</h5>
+                                <p>Card</p>
+                            </div>
+                            <div class="d-flex flex-column  gap-3 align-items-centre">
+                                <i class="fa-solid fa-plus"></i>
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row img7 py-3">
+                    <img src="images/5.jpg" width="100%">
+                    <div class="pop w-100 px-5">
+                        <div class="d-flex justify-content-between p-2">
+                            <div class="app1 d-block">
+                                <h5>Card2</h5>
+                                <p>Card</p>
+                            </div>
+                            <div class="d-flex flex-column  gap-3 align-items-centre">
+                                <i class="fa-solid fa-plus"></i>
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="row img2 py-3">
+                    <img src="images/6.jpg" width="100%">
+                    <div class="pop w-100 px-5">
+                        <div class="d-flex justify-content-between p-2">
+                            <div class="app1 d-block">
+                                <h5>Card2</h5>
+                                <p>Card</p>
+                            </div>
+                            <div class="d-flex flex-column  gap-3 align-items-centre">
+                                <i class="fa-solid fa-plus"></i>
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row img5 py-3">
+                    <img src="images/10.jpg" width="100%">
+                    <div class="pop w-100 px-5">
+                        <div class="d-flex justify-content-between p-2">
+                            <div class="app1 d-block">
+                                <h5>Card2</h5>
+                                <p>Card</p>
+                            </div>
+                            <div class="d-flex flex-column  gap-3 align-items-centre">
+                                <i class="fa-solid fa-plus"></i>
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row img8 py-3">
+                    <img src="images/4.jpg" width="100%">
+                    <div class="pop w-100 px-5">
+                        <div class="d-flex justify-content-between p-2">
+                            <div class="app1 d-block">
+                                <h5>Card2</h5>
+                                <p>Card</p>
+                            </div>
+                            <div class="d-flex flex-column  gap-3 align-items-centre">
+                                <i class="fa-solid fa-plus"></i>
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="row img3 py-3">
+                    <img src="images/9.jpg" width="100%">
+                    <div class="pop w-100 px-5">
+                        <div class="d-flex justify-content-between p-2">
+                            <div class="app1 d-block">
+                                <h5>Card2</h5>
+                                <p>Card</p>
+                            </div>
+                            <div class="d-flex flex-column  gap-3 align-items-centre">
+                                <i class="fa-solid fa-plus"></i>
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row img6 py-3">
+                    <img src="images/7.jpg" width="100%">
+                    <div class="pop w-100 px-5">
+                        <div class="d-flex justify-content-between p-2">
+                            <div class="app1 d-block">
+                                <h5>Card2</h5>
+                                <p>Card</p>
+                            </div>
+                            <div class="d-flex flex-column  gap-3 align-items-centre">
+                                <i class="fa-solid fa-plus"></i>
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row img9 py-3">
+                    <img src="images/12.jpg" width="100%">
+                    <div class="pop w-100 px-5">
+                        <div class="d-flex justify-content-between p-2">
+                            <div class="app1 d-block">
+                                <h5>Card2</h5>
+                                <p>Card</p>
+                            </div>
+                            <div class="d-flex flex-column  gap-3 align-items-centre">
+                                <i class="fa-solid fa-plus"></i>
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row img9 py-3">
+                    <img src="images/13.jpg" width="100%">
+                    <div class="pop w-100 px-5">
+                        <div class="d-flex justify-content-between p-2">
+                            <div class="app1 d-block">
+                                <h5>Card2</h5>
+                                <p>Card</p>
+                            </div>
+                            <div class="d-flex flex-column  gap-3 align-items-centre">
+                                <i class="fa-solid fa-plus"></i>
+                             
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- heighlights end -->
+    <!-- team -->
+    <section class="team" id="team">
+        <div class="container py-5">
+            <h1 class="behind">TEAM</h1>
+            <h3 class="front">TEAM</h3>
+        <center>
+            <p class="pt-4">Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+        </center>  
+        </div>
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="white-bg p-3">
+                     <img src="images/14.jpg" width="100%" height="300px">
+                      <center>
+                       <h3 class="mt-4">Emily Thompson</h3>
+                       <i>CEO & Founder</i>
+                       <p class="mt-4">With over two decades of experience in the automotive industry, Emily is the driving force behind our company's vision and growth. Her innovative strategies and dedication to customer satisfaction have propelled us to become a leader in the vehicle rental market.
+                    </p>
+                
+                       <div class="iconset">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                       </div>
+                      </center>
+                     </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="white-bg p-3">
+                    <img src="images/15.jpg" width="100%" height="300px">
+                     <center>
+                      <h3 class="mt-4">Daniel Rodriguez</h3>
+                      <i>Head of Operations</i>
+                      <p class="mt-4">Daniel oversees all operational aspects of our vehicle rental services, ensuring seamless logistics, efficient fleet management, and exceptional service delivery. His meticulous attention to detail and strategic planning skills optimize our operations for maximum efficiency.</p>
+
+                      <div class="iconset">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                      </div>
+                     </center>
+                    </div>
+                    </div>
+                
+                
+                <div class="col-md-4">
+                    <div class="white-bg p-3">
+                    <img src="images/16.jpg" width="100%" height="300px">
+                <center>
+                     <h3 class="mt-4">Sophia Patel</h3>
+                     <i>Customer Experience Manager</i>
+                     <p class="mt-4">Sophia is passionate about delivering outstanding customer service and enhancing the rental experience for our clients. With her friendly demeanor and proactive approach, she ensures that every customer interaction is positive and memorable, making us the preferred choice for vehicle rentals.</p>
+
+                     <div class="iconset">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                     </div>
+                     </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+    <!-- team end -->
+    <!-- contact -->
+    
+        <div class="pt-4" id="contactus">
+             <h1 class="behind">CONTACT</h1>
+             <h3 class="front">CONTACT</h3>
+          <center>
+             <p class="pt-4 px-5">For more details about our services or to get personalized assistance, please feel free to contact us directly or fill out the form below. Rest assured, upon submission, you will receive a prompt call from our team to address your inquiries and assist you further.</p>
+          </center>  
+        </div>
+    <section class="p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="details">
+                        <div class="row detailbox">
+                            <div class="col-md-2 iconbox">
+                                <div class="iconholder">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <h3>Location:</h3>
+                                <p>cristal building parippally po 691575</p>
+                            </div>
+                        </div>
+
+                        <div class="row detailbox">
+                            <div class="col-md-2 iconbox">
+                                <div class="iconholder">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <h3>Email:</h3>
+                                <p>inforent@ruv.com</p>
+                            </div>
+                        </div>
+
+                        <div class="row detailbox">
+                            <div class="col-md-2 iconbox">
+                                <div class="iconholder">
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <h3>Call:</h3>
+                                <p>+91 9446038674</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="map p-3">
+                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15771.012039697001!2d76.74825753783506!3d8.809259114609159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05e65cfc6e6f31%3A0x800bfee42ae20c1c!2sParippally%2C%20Kerala!5e0!3m2!1sen!2sin!4v1716772203881!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="details">                    
+                    <form>
+                        <div class="row">
+                              <div class="col-md-6 pt-3">
+                                <label>Your Name</label>
+                                <input class="form-control" type="text">
+                              </div>
+                              <div class="col-md-6 pt-3">
+                                <Label>Your Email</Label>
+                                <input class="form-control" type="email">
+                              </div>
+                              <div class="col-md-12 pt-3">
+                                <Label>Contact Number</Label>
+                                <input class="form-control" type="number">
+                              </div>
+                              <div class="col-md-12 pt-3">
+                                <Label>Subject</Label>
+                                <input class="form-control" type="text">
+                              </div>
+                              <div class="col-md-12 pt-3">
+                                <Label>Message</Label>
+                                <textarea class="form-control" rows="10"></textarea>
+                              </div>
+                            </div>
+                            <center class="p-4">
+                            <button type="button" class="btn btn-success bluebt">Send Message</button>
+                            </center>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact end -->
+     <!-- footer -->
+     <footer class="footer p-1">
+        <div class="container">
+         <center>
+         <h3 class="pb-1">RuV</h3>
+         <p>We extend a warm invitation for you to visit our office anytime! Additionally, stay connected with us on Instagram, Facebook, Twitter, LinkedIn, and Skype for exciting updates and exclusive offers.</p>
+ 
+          
+         
+             <div class="iconset pb-3">
+                 <i class="fa-brands fa-twitter iconset2"></i>
+                 <i class="fa-brands fa-facebook iconset2"></i>
+                 <i class="fa-brands fa-instagram iconset2"></i>
+                 <i class="fa-brands fa-skype iconset2"></i>
+                 <i class="fa-brands fa-linkedin iconset2"></i>
+             </div>
+         </center> 
+ 
+         <hr>
+         <div class="d-flex bd-highlight pt-2">
+             <p class="p-2 flex-grow-1 bd-highlight"><i class="fa-regular fa-copyright"></i>Copyright <span class="text-bold">RuV</span>.AllRights Reserved</p>
+             <p class="p-2 bd-highlight">Designed by <span class="green1">Galaxy S</span></p>
+         </div>
+ 
+         <div class="arrow">
+             <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+         </div>
+         
+        </div>
+     </footer>
+     <!-- footer end -->
+     <script>
+        document.getElementById('mainHeading').addEventListener('click', function() {
+          var optionsList = document.getElementById('optionsList');
+          if (optionsList.style.display === 'none' || optionsList.style.display === '') {
+            optionsList.style.display = 'block';
+          } else {
+            optionsList.style.display = 'none';
+          }
+        });
+        </script>
+ 
+    
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     
+</body>
+</html>

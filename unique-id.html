@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmed</title>
+    <link rel="icon" href="eNno/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="unique-id.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light bg-white fixed-top">
+            <div class="container">
+            
+              <a class="navbar-brand" href="#">RuV -rent your vehicle</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="signinpage.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="signinpage.html#about">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Vehicle
+                      <i class="fa-solid fa-angle-down"></i>
+                      </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="bike.html">Motor Bike</a></li>
+                      <li><a class="dropdown-item" href="bicycle.html">Bicycle</a></li>
+                      <li><a class="dropdown-item" href="car.html">4-Wheeler</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="signinpage.html#services">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="signinpage.html#highlights">Highlights</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="signinpage.html#team">Team</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="signinpage.html#contactus">Contact us</a>
+                  </li>
+                  <a href="mainhome.html"><button type="button" class="btn btn-primary start">Log Out</button></a>
+                </ul>
+              </div>
+           
+        </div>
+          </nav>
+    </section>
+    <!-- navbar end -->
+
+    <!-- booking confirmation -->
+    <section class="confirmation-section">
+        <div class="confirmation-box">
+            <h1>Booking Confirmation</h1>
+            <p>Thank you for booking your ride with us! Your unique booking ID is:</p>
+            <div class="booking-id" id="bookingID"></div>
+            <p class="pt-4">Please make sure to note down this ID or take a screenshot for future reference.</p>
+        </div>
+    </section>
+
+    <script>
+        // Function to generate a unique 8-digit ID
+        function generateUniqueID() {
+            var idLength = 8;
+            var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+            var uniqueID = '';
+            for (var i = 0; i < idLength; i++) {
+                uniqueID += characters.charAt(Math.floor(Math.random() * characters.length));
+            }
+            return uniqueID;
+        }
+
+        // Generate a unique ID for the customer
+        var bookingID = generateUniqueID();
+
+        // Display the booking ID in the HTML
+        document.getElementById("bookingID").innerText = bookingID;
+    </script>
+
+    <!-- footer -->
+    <section>
+        <footer class="footer pt-2">
+            <div class="container">
+                <hr>
+                <div class="d-flex bd-highlight pt-2">
+                    <p class="p-2 flex-grow-1 bd-highlight"><i class="fa-regular fa-copyright"></i> Copyright <span class="text-bold">RuV</span>. All Rights Reserved</p>
+                    <p class="p-2 bd-highlight">Designed by <span class="green1">Galaxy S</span></p>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <!-- footer end -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

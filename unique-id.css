@@ -1,0 +1,93 @@
+
+        /* general */
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /* navbar */
+        .navbar-brand {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .start {
+            background-color: white;
+            color: gray;
+            border-color: gray;
+        }
+        .start:hover {
+            background-color: #4c88fc;
+            color: white;
+            border-color: #4c88fc;
+        }
+        .navbar-brand {
+            color: darkgray!important;
+        }
+        .bg-white {
+            box-shadow: rgb(38, 57, 77) 0px 0px 20px 0px;
+        }
+
+        /* body */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .confirmation-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .confirmation-box {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+        .booking-id {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px;
+            border: 2px solid #007bff;
+            border-radius: 4px;
+            font-size: 1.5em;
+            color: #007bff;
+            background-color: #e9f7ff;
+        }
+
+        /* footer */
+        .footer {
+            background-color: #f9f9fa;
+        }
+        .text-bold {
+            font-weight: 800;
+        }
+        .green1 {
+            color: #16df7e;
+        }
+        .arrow {
+            width: 35px;
+            height: 40px;
+            border-radius: 5px;
+            background-color: #21cc7e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+        }
+        .arrow:hover {
+            background-color: #089355;
+        }
+        .arrow i {
+            color: white;
+        }
